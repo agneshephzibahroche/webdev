@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Genre Clubs</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css" />
+
+    <!-- JQuery to support Bootstrap Functions -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Javascript -->
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <!-- CSS scroll animation -->
+    <!-- https://michalsnik.github.io/aos/ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- StyleSheet for genre clubs page -->
+    <link rel="stylesheet" href="stylesheets/genreclubs.css" />
+
+    <!-- General Stylesheet -->
+    <link rel="stylesheet" href="stylesheets/general.css" />
+
+    <!-- Javascript for genre clubs page -->
+    <script type="text/javascript" src="js/genreclubs.js"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navigation">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          id="navigation-title"
+          style="font-size: 2vw"
+          >📖 Chapters & Pages</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html"
+                id="navigation-tab"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="whoweare.html"
+                id="navigation-tab"
+                >Who We Are</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="toppicks.html"
+                role="button"
+                aria-expanded="false"
+                id="navigation-tab"
+              >
+                Top Picks
+              </a>
+              <ul class="dropdown-menu" id="navigation-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="toppicks.html#ourlatestpick"
+                    id="navigation-dropdown"
+                    >Our Latest Pick</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="toppicks.html#top3picks"
+                    id="navigation-dropdown"
+                    >Top 3 Picks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="toppicks.html#pastreads"
+                    id="navigation-dropdown"
+                    >Past Reads</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="genreclubs.html"
+                id="navigation-tab"
+                >Genre Clubs</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="events.html"
+                role="button"
+                aria-expanded="false"
+                id="navigation-tab"
+              >
+                Events
+              </a>
+              <ul class="dropdown-menu" id="navigation-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="events.html#pastevents"
+                    id="navigation-dropdown"
+                    >Our Past Events</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="events.html#upcomingevents"
+                    id="navigation-dropdown"
+                    >Upcoming Events</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <a href="joinus.html"><button id="joinus-button">Join Us!</button></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- back to top button -->
+    <!-- https://mdbootstrap.com/docs/standard/extended/back-to-top/ -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg"
+      style="color: #f3aa20; background-color: #3b5998"
+      id="btn-back-to-top"
+    >
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- Section 1 -->
+    <div class="genreclubs-section-1">
+      <!-- Thriller Overlay -->
+      <div
+        id="thriller"
+        class="overlay"
+        style="background-color: rgba(25, 25, 112, 10)"
+      >
+        <div class="genre-content">
+          <h1 class="genre-title" style="color: rgb(164, 211, 240)">
+            Thriller
+          </h1>
+          <div id="genre-description">
+            <p class="genre-description">
+              Thriller novels are a heart-pumping adventure into the unknown.
+              Read books that are filled with unexpected twists,
+              edge-of-your-seat suspense, and a race against time to uncover the
+              truth. Discuss about your favourite books with similar thrill
+              seekers (even if it is just in books) and get ready for a journey
+              filled with intrigue, danger, and nail-biting moments that will
+              keep you guessing until the very end.
+            </p>
+          </div>
+          <div id="genre-playlist">
+            <iframe
+              class="responsive-iframe"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/5LJjPQUoOg0XDtltAc57ov?utm_source=generator"
+              width="100%"
+              height="252px"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <h2 class="most-loved" style="color: rgb(164, 211, 240)">
+            Most Loved Reads
+          </h2>
+          <div class="most-loved-books-section">
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/verity.jpg"
+              alt="verity book cover"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/daisy-darker.jpg"
+              alt="daisy darker book cover"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/agoodgirlsguidetomurder.jpg"
+              alt="a good girl's guide to murder book cover"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/local-woman-missing.jpg"
+              alt="local woman missing book cover"
+            />
+          </div>
+        </div>
+        <button id="close-button" class="closebtn" onclick="closeContent(1)">
+          &times;
+        </button>
+      </div>
+
+      <!-- Romance Overlay -->
+      <div
+        id="romance"
+        class="overlay"
+        style="background-color: rgba(105, 1, 1, 10)"
+      >
+        <div class="genre-content">
+          <h1 class="genre-title" style="color: rgb(250, 143, 178)">Romance</h1>
+          <div id="genre-description">
+            <p class="genre-description">
+              Love, passion, and heartbreak are the main ingredients of the
+              romance genre. Whether it's a classic tale of star-crossed lovers
+              or a modern story of unexpected love, romance novels capture the
+              ups and downs of human emotions in the most captivating way
+              possible. From the first kiss to the final declaration of love,
+              these stories are sure to make your heart skip a beat and leave
+              you yearning for more.
+            </p>
+          </div>
+          <div id="genre-playlist">
+            <iframe
+              class="responsive-iframe"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/4c8MUTW1ipZsO7lM9t8BIa?utm_source=generator"
+              width="100%"
+              height="152"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <h2 class="most-loved" style="color: rgb(250, 143, 178)">
+            Most Loved Reads
+          </h2>
+          <div class="most-loved-books-section">
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/five-feet-apart.jpg"
+              alt="five feet apart book cover"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/thingswenvrgotover.jpg"
+              alt="things we never got over book cover"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/pride-and-prejudice.jpg"
+              alt="pride and prejudice book cover"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/maliburising.jpg"
+              alt="malibu rising book cover"
+            />
+          </div>
+        </div>
+        <button id="close-button" class="closebtn" onclick="closeContent(2)">
+          &times;
+        </button>
+      </div>
+
+      <!-- Fantasy Overlay -->
+      <div
+        id="fantasy"
+        class="overlay"
+        style="background-color: rgba(0, 100, 0, 10)"
+      >
+        <div class="genre-content">
+          <h1 class="genre-title" style="color: rgb(213, 252, 213)">Fantasy</h1>
+          <div id="genre-description">
+            <p class="genre-description">
+              Fantasy books transport you to a magical world filled with
+              mythical creatures, enchanted landscapes, and daring heroes on a
+              quest for adventure. Immerse yourself in a world of imagination,
+              where the impossible becomes reality and the boundaries of your
+              wildest dreams are limitless. Hitch a ride with the fantasy
+              adventurers who read books that will spark your creativity and
+              leave you spellbound.
+            </p>
+          </div>
+          <div id="genre-playlist">
+            <iframe
+              class="responsive-iframe"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/5HteG3iHuZRz8l5zo48cJD?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <h2 class="most-loved" style="color: rgb(213, 252, 213)">
+            Most Loved Reads
+          </h2>
+          <div class="most-loved-books-section">
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/harry-potter.jpg"
+              alt="harry potter book cover"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/six-of-crows.jpg"
+              alt="six of crows book cover"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/the-cruel-prince.jpg"
+              alt="the cruel prince book cover"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/thesevenhusbandsofevelynhugo.jpg"
+              alt="the seven husbands of evelyn hugo book cover"
+            />
+          </div>
+        </div>
+        <button id="close-button" class="closebtn" onclick="closeContent(3)">
+          &times;
+        </button>
+      </div>
+
+      <!-- Poetry Overlay -->
+      <div
+        id="poetry"
+        class="overlay"
+        style="background-color: rgba(75, 0, 130, 10)"
+      >
+        <div class="genre-content">
+          <h1 class="genre-title" style="color: lavender">Poetry</h1>
+          <div id="genre-description">
+            <p class="genre-description">
+              Poetry is a vibrant and versatile genre that has been cherished by
+              people of all ages and cultures for centuries. Reading
+              and writing poetry can be a deeply enriching experience, allowing
+              us to connect with our own feelings and experiences as well as
+              those of others. Whether you're a seasoned poet or just starting
+              out, there's never been a better time to explore this beautiful
+              and timeless genre.
+            </p>
+          </div>
+          <div id="genre-playlist">
+            <iframe
+              class="responsive-iframe"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/2euwOCl51m64aahiNttxuY?utm_source=generator&theme=0"
+              width="100%"
+              height="352"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <h2 class="most-loved" style="color: lavender">Most Loved Reads</h2>
+          <div class="most-loved-books-section">
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/milkandhoney.jpg"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/selflovepoetry.jpg"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/thecompletepoetry.jpg"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/yesterdayiwasthemoon.jpg"
+            />
+          </div>
+        </div>
+        <button id="close-button" class="closebtn" onclick="closeContent(4)">
+          &times;
+        </button>
+      </div>
+
+      <!-- non-fiction Overlay -->
+      <div
+        id="non-fiction"
+        class="overlay"
+        style="background-color: rgba(189, 83, 1, 10)"
+      >
+        <div class="genre-content">
+          <h1 class="genre-title" style="color: rgb(248, 248, 132)">
+            Non-Fiction
+          </h1>
+          <div id="genre-description">
+            <p class="genre-description">
+              The non-fiction genre explores the fascinating world of real-life
+              events, people, and ideas. From memoirs and biographies to history
+              and science, non-fiction offers a wealth of knowledge and insights
+              into the world around us. With gripping storytelling and a
+              commitment to truth and accuracy, non-fiction takes readers on a
+              journey of discovery and enlightenment that is both informative
+              and inspiring.
+            </p>
+          </div>
+          <div id="genre-playlist">
+            <iframe
+              class="responsive-iframe"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator"
+              width="100%"
+              height="352"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <h2 class="most-loved" style="color: rgb(248, 248, 132)">
+            Most Loved Reads
+          </h2>
+          <div class="most-loved-books-section">
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/before-the-coffee-gets-cold.jpg"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/the-mountain-is-you.jpg"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/theoverthinkingcure.jpg"
+            />
+            <img
+              class="most-loved-books-image"
+              src="images/genreclubs-images/yourtwenties.jpg"
+            />
+          </div>
+        </div>
+        <button id="close-button" class="closebtn" onclick="closeContent(5)">
+          &times;
+        </button>
+      </div>
+
+      <!-- Genre Clubs title and buttons -->
+      <div class="genreclubs-section-1-title">
+        <h1 class="title">Genre Clubs</h1>
+      </div>
+      <div>
+        <button class="button thriller-button" onclick="loadContent(1);">
+          Thriller
+        </button>
+        <button class="button romance-button" onclick="loadContent(2);">
+          Romance
+        </button>
+        <button class="button fantasy-button" onclick="loadContent(3);">
+          Fantasy
+        </button>
+        <button class="button poetry-button" onclick="loadContent(4);">
+          Poetry
+        </button>
+        <button class="button non-fiction-button" onclick="loadContent(5);">
+          Non-Fiction
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- https://mdbootstrap.com/docs/standard/extended/back-to-top/ -->
+    <footer class="text-center" id="footer">
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #3b5998"
+            href="#!"
+            role="button"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #55acee"
+            href="#!"
+            role="button"
+            ><i class="fa fa-twitter" aria-hidden="true"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="#!"
+            role="button"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </section>
+
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <div class="row d-flex justify-content-center">
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter : </strong>
+                </p>
+              </div>
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id="form5Example2"
+                    placeholder="Email Adress"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button
+                  type="submit"
+                  id="subscribe-button"
+                  class="btn btn-outline-light mb-4"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: #2a445e; font-weight: 1000; color: #f3aa20"
+      >
+        © 2023 Copyright: Chapters and Pages
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- For smooth scrolling -->
+    <!-- http://michalsnik.github.io/aos/ -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- For back to top button -->
+    <script>
+      //Get the button
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>

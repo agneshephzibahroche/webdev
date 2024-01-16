@@ -1,0 +1,17 @@
+/* joinus-success-section-1 */
+
+.joinus-success-section-1 {
+  background-color: #58094f;
+  align-items: center;
+  justify-content: center;
+  height: 30vw;
+}
+
+.title {
+  font-weight: 1000;
+  font-size: 6vw;
+  color: #ffbd71;
+  text-align: center;
+  margin-bottom: 2%;
+  padding-top: 10%;
+}

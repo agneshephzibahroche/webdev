@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Who We Are</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css" />
+
+    <!-- JQuery to support Bootstrap Functions -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Javascript -->
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <!-- StyleSheet for who we are page -->
+    <link rel="stylesheet" href="stylesheets/whoweare.css" />
+
+    <!-- General Stylesheet -->
+    <link rel="stylesheet" href="stylesheets/general.css" />
+
+    <!-- CSS scroll animation -->
+    <!-- https://michalsnik.github.io/aos/ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light"
+      id="navigation"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          id="navigation-title"
+          style="font-size: 2vw"
+          >📖 Chapters & Pages</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html"
+                id="navigation-tab"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="whoweare.html"
+                id="navigation-tab"
+                >Who We Are</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="toppicks.html"
+                role="button"
+                aria-expanded="false"
+                id="navigation-tab"
+              >
+                Top Picks
+              </a>
+              <ul class="dropdown-menu" id="navigation-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="toppicks.html#ourlatestpick"
+                    id="navigation-dropdown"
+                    >Our Latest Pick</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="toppicks.html#top3picks"
+                    id="navigation-dropdown"
+                    >Top 3 Picks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="toppicks.html#pastreads"
+                    id="navigation-dropdown"
+                    >Past Reads</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="genreclubs.html"
+                id="navigation-tab"
+                >Genre Clubs</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="events.html"
+                role="button"
+                aria-expanded="false"
+                id="navigation-tab"
+              >
+                Events
+              </a>
+              <ul class="dropdown-menu" id="navigation-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="events.html#pastevents"
+                    id="navigation-dropdown"
+                    >Our Past Events</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="events.html#upcomingevents"
+                    id="navigation-dropdown"
+                    >Upcoming Events</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <a href="joinus.html"><button id="joinus-button">Join Us!</button></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- back to top button -->
+    <!-- https://mdbootstrap.com/docs/standard/extended/back-to-top/ -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg"
+      style="color: #f3aa20; background-color: #3b5998"
+      id="btn-back-to-top"
+    >
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <div class="whowearepage-section-1">
+      <div
+        class="whowearepage-title"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <img
+          src="images/whoweare-images/titleimg.png"
+          class="whoweare-title-img"
+          alt="who we are thumbnail image"
+        />
+        <h1 class="whoweare-title">Who We Are</h1>
+      </div>
+
+      <h2 class="whoweare-welcome" data-aos="fade-up" data-aos-duration="1500">
+        Welcome To
+      </h2>
+      <h2
+        class="whoweare-welcome"
+        style="padding-top: 10%; padding-left: 27%"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        Chapters & Pages !
+      </h2>
+      <p
+        class="whoweare-welcome-text"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        Welcome to our book club, where literature comes alive ! We wil be
+        thrilled to have you join us on this journey of discovery and
+        exploration of the written word. Our club is not just about reading
+        books, but also about connecting with fellow book lovers and immersing
+        ourselves in the worlds created by our favourite authors.
+      </p>
+      <p
+        class="whoweare-welcome-text"
+        style="padding-top: 36%"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        As a member of our book club, you'll have access to our genre clubs and
+        events, where you can explore specific genres, authors, and themes in
+        depth, and engage in lively discussions and activities with like-minded
+        readers. Whether you're into thrillers, romance, non-fiction, or
+        fantasy, we've got you covered.
+      </p>
+      <p
+        class="whoweare-welcome-text"
+        style="padding-top: 52%"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        Our goal is to create a vibrant community that celebrates the beauty,
+        power, and diversity of literature, and we are excited to have you be
+        part of it. So, welcome once again, and let's embark on this wonderful
+        journey together!
+      </p>
+
+      <div
+        class="who-we-are-whatareyouwaitingfor"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        So...what are you waiting for ?
+      </div>
+      <a href="joinus.html"
+        ><button id="join-us-button">Join Us Now !</button></a
+      >
+    </div>
+
+    <!-- Footer -->
+    <!-- https://mdbootstrap.com/docs/standard/extended/back-to-top/ -->
+    <footer class="text-center" id="footer">
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #3b5998"
+            href="#!"
+            role="button"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #55acee"
+            href="#!"
+            role="button"
+            ><i class="fa fa-twitter" aria-hidden="true"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="#!"
+            role="button"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </section>
+
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <div class="row d-flex justify-content-center">
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter : </strong>
+                </p>
+              </div>
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id="form5Example2"
+                    placeholder="Email Adress"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button
+                  type="submit"
+                  id="subscribe-button"
+                  class="btn btn-outline-light mb-4"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: #2a445e; font-weight: 1000; color: #f3aa20"
+      >
+        © 2023 Copyright: Chapters and Pages
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- For smooth scrolling -->
+    <!-- http://michalsnik.github.io/aos/ -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- For back to top button -->
+    <script>
+      //Get the button
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>

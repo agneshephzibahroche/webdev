@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Events</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css" />
+
+    <!-- JQuery to support Bootstrap Functions -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Javascript -->
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <!-- StyleSheet for events page -->
+    <link rel="stylesheet" href="stylesheets/events.css" />
+
+    <!-- General Stylesheet -->
+    <link rel="stylesheet" href="stylesheets/general.css" />
+
+    <!-- CSS scroll animation -->
+    <!-- https://michalsnik.github.io/aos/ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light"
+      id="navigation"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          id="navigation-title"
+          style="font-size: 2vw"
+          >📖 Chapters & Pages</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html"
+                id="navigation-tab"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="whoweare.html"
+                id="navigation-tab"
+                >Who We Are</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="toppicks.html"
+                role="button"
+                aria-expanded="false"
+                id="navigation-tab"
+              >
+                Top Picks
+              </a>
+              <ul class="dropdown-menu" id="navigation-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="toppicks.html#ourlatestpick"
+                    id="navigation-dropdown"
+                    >Our Latest Pick</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="toppicks.html#top3picks"
+                    id="navigation-dropdown"
+                    >Top 3 Picks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="toppicks.html#pastreads"
+                    id="navigation-dropdown"
+                    >Past Reads</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="genreclubs.html"
+                id="navigation-tab"
+                >Genre Clubs</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="events.html"
+                role="button"
+                aria-expanded="false"
+                id="navigation-tab"
+              >
+                Events
+              </a>
+              <ul class="dropdown-menu" id="navigation-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="events.html#pastevents"
+                    id="navigation-dropdown"
+                    >Our Past Events</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="events.html#upcomingevents"
+                    id="navigation-dropdown"
+                    >Upcoming Events</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <a href="joinus.html"><button id="joinus-button">Join Us!</button></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- back to top button -->
+    <!-- https://mdbootstrap.com/docs/standard/extended/back-to-top/ -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg"
+      style="color: #f3aa20; background-color: #3b5998"
+      id="btn-back-to-top"
+    >
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- Section 1 -->
+    <div class="eventspage-section-1" id="pastevents">
+      <div
+        class="eventspage-section-1-title"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <h1 class="title">Our Past Events</h1>
+        <!-- https://getbootstrap.com/docs/5.3/components/carousel/ -->
+        <div class="event-carousel">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/events-images/event-2.jpg"
+                  class="carousel-image"
+                  alt="what is your story workshop"
+                />
+                <div class="carousel-caption d-none d-md-block" style="color: white; background-color: #2a445e; height: 8vw; margin-bottom: 5%;">
+                  <h5 style="font-size: 2vw; padding-bottom: 1.5vw; height: 1vw;">What Is Your Story Workshop</h5>
+                  <p style="font-size: 1.2vw;">Craft compelling narratives with our personalized story workshop !</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/events-images/event-1.jpg"
+                  class="carousel-image"
+                  alt="Bookstore shopping"
+                />
+                <div class="carousel-caption d-none d-md-block" style="color: black; background-color: beige; height: 8vw; margin-bottom: 5%;">
+                  <h5 style="font-size: 2vw; padding-bottom: 1.5vw; height: 1vw;">Bookstore Shopping</h5>
+                  <p style="font-size: 1.2vw;">Shop for books as a whole genre club with your fellow book clubbers!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/events-images/event-3.jpg"
+                  class="carousel-image"
+                  alt="In Person Book club Meetings"
+                />
+                <div class="carousel-caption d-none d-md-block" style="color: black; background-color: burlywood; height: 8vw; margin-bottom: 5%;">
+                  <h5 style="font-size: 2vw; padding-bottom: 1.5vw; height: 1vw;">In Person Book club Meetings</h5>
+                  <p style="font-size: 1.2vw;">Meet with your booksters at coffee shops or book cafes</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/events-images/event-4.jpg"
+                  class="carousel-image"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block" style="color: whitesmoke; background-color: cornflowerblue; height: 8vw; margin-bottom: 5%;">
+                  <h5 style="font-size: 2vw; padding-bottom: 1.5vw; height: 1vw;">Online Book Club Meetings</h5>
+                  <p style="font-size: 1.2vw;">Meet your book club groups online and engage in lively discussion on the current read!</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="eventspage-section-2" id="upcomingevents">
+      <h1 class="title" style="padding-top: 2%">Upcoming Events</h1>
+      <div
+        class="eventspage-section-2-image"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <img
+          src="images/events-images/bestbookvote.png"
+          class="rounded"
+          alt="picture of girl reading"
+          id="eventspage-section-2-image"
+        />
+      </div>
+      <div
+        class="eventspage-section-2-title"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <h1 class="smaller-title">Monthly Book Vote</h1>
+        <h3 class="subtitle">
+          Join the excitement of the book club's monthly favourite book voting!
+          Discover the joy of reading new and diverse books, and be part of the
+          community that shares their thoughts, opinions and insights on the
+          best reads of the month. Each vote brings a new adventure, as members
+          explore different genres, authors, and perspectives. Don't miss out on
+          the chance to immerse yourself in the world of literature, and let
+          your voice be heard in the thrilling race for the top book of the
+          month!
+        </h3>
+      </div>
+      <div class="genre-club" data-aos="fade-up" data-aos-duration="1500">
+        <img
+          src="images/home-images/thriller.png"
+          class="genre-club-img-2 rounded"
+        />
+        <h5 class="genre-club-title-2">
+          Thriller Book Club Meeting (in-person) @bookishlycafe
+        </h5>
+        <h6 class="genre-club-description-2">
+          Get ready for a heart-pounding, nail-biting experience at the Thriller
+          Book Club Meeting! Join fellow enthusiasts for an in-person discussion
+          on the latest and greatest thrillers of the season. Share your
+          insights and theories, and hear what others have to say about the
+          twists and turns of the plot. With suspenseful storytelling and
+          unforgettable characters, these books will keep you on the edge of
+          your seat until the very last page. Don't miss the chance to connect
+          with other thriller fans and experience the thrill of a lifetime at
+          the bookishly cafe best known for its comfortable interior!
+        </h6>
+
+        <img
+          src="images/home-images/fantasy.png"
+          class="genre-club-img-1 rounded"
+        />
+        <h5 class="genre-club-title-1">Fantasy Book Club Meeting (online)</h5>
+        <h6 class="genre-club-description-1">
+          Step into a world of magic and adventure at the online Fantasy Book
+          Club Meeting! Connect with fellow fans of the genre from the comfort
+          of your own home and delve into the intricate worlds created by the
+          best fantasy authors. From epic battles to mythical creatures, these
+          books will transport you to fantastical realms and leave you
+          spellbound. Share your thoughts, ideas, and questions in a lively and
+          engaging online discussion, and be part of a community that celebrates
+          the magic of the written word. Join us for a virtual journey into the
+          realm of fantasy and let your imagination soar!
+        </h6>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- https://mdbootstrap.com/docs/standard/extended/back-to-top/ -->
+    <footer class="text-center" id="footer">
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #3b5998"
+            href="#!"
+            role="button"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #55acee"
+            href="#!"
+            role="button"
+            ><i class="fa fa-twitter" aria-hidden="true"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="#!"
+            role="button"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </section>
+
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <div class="row d-flex justify-content-center">
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter : </strong>
+                </p>
+              </div>
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id="form5Example2"
+                    placeholder="Email Adress"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button
+                  type="submit"
+                  id="subscribe-button"
+                  class="btn btn-outline-light mb-4"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: #2a445e; font-weight: 1000; color: #f3aa20"
+      >
+        © 2023 Copyright: Chapters and Pages
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- For smooth scrolling -->
+    <!-- http://michalsnik.github.io/aos/ -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- For back to top button -->
+    <script>
+      //Get the button
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>

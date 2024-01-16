@@ -1,0 +1,214 @@
+/* homepage-section-1 */
+
+.homepage-section-1 {
+  background-color: #58094f;
+  align-items: center;
+  justify-content: center;
+  height: 45vw;
+}
+
+.homepage-section-1-title {
+  float: left;
+  text-align: center;
+  padding-left: 4%;
+  display: inline;
+  margin-top: 12%;
+  width: 40vw;
+}
+
+.title {
+  font-weight: 1000;
+  font-size: 6vw;
+  color: #ffbd71;
+  text-align: center;
+}
+
+.subtitle {
+  padding-top: 2%;
+  font-weight: 1000;
+  font-size: 2vw;
+  color: #fd8f52;
+  text-align: center;
+}
+
+.homepage-section-1-image {
+  margin-top: 5%;
+  margin-right: 5%;
+  float: right;
+}
+
+#homepage-section-1-image {
+  width: 50vw;
+}
+
+/* homepage-section-2 */
+
+.homepage-section-2 {
+  background-color: #841e62;
+  align-items: center;
+  justify-content: center;
+  height: 55vw;
+}
+
+.top-picks-section {
+  align-items: center;
+  justify-content: center;
+  background-color: #2a445e;
+  height: 32vw;
+  width: 80vw;
+  margin-left: 9vw;
+  margin-right: 9vw;
+}
+
+.top-picks-image {
+  width: 17vw;
+  height: 25vw;
+  margin-left: 8.8%;
+  margin-top: 4.2%;
+  border-radius: 3%;
+}
+
+/* homepage-section-3 */
+
+.homepage-section-3 {
+  background-color: #2a445e;
+  align-items: center;
+  justify-content: center;
+  height: 75vw;
+}
+
+.genre-club {
+  align-items: center;
+  justify-content: center;
+  height: 20vw;
+  width: 95vw;
+  margin-left: 2vw;
+}
+
+.genre-club-img-1 {
+  width: 22vw;
+  height: 22vw;
+  margin-left: 10vw;
+  float: left;
+}
+
+.genre-club-description-1 {
+  margin-left: 38%;
+  color: #f3aa20;
+  font-weight: 1000;
+  font-size: 1.7vw;
+  margin-right: 10vw;
+  line-height: 1.6;
+  padding-top: 1%;
+}
+
+.genre-club-img-2 {
+  width: 22vw;
+  height: 22vw;
+  margin-right: 10vw;
+  float: right;
+  margin-bottom: 1%;
+}
+
+.genre-club-description-2 {
+  color: #f0cc8a;
+  font-weight: 1000;
+  font-size: 1.7vw;
+  margin-left: 10vw;
+  margin-right: 38%;
+  margin-top: 5%;
+  line-height: 1.6;
+  padding-top: 1%;
+}
+
+/* Explore More Button */
+#explore-more-button {
+  background-color: #841e62;
+  padding: 1% 6%;
+  font-weight: 1000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3vw;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: #e1ceff;
+  border: 0% solid #841e62;
+  border-radius: 20px;
+  margin-left: 30vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  align-items: center;
+}
+
+#explore-more-button:hover {
+  background-color: #e1ceff;
+  color: #841e62;
+  /* border: 25% solid #fd8f52; */
+}
+
+/* homepage-section-4 */
+
+.homepage-section-4 {
+  background-color: #58094f;
+  align-items: center;
+  justify-content: center;
+  height: 70vw;
+}
+
+.who-we-are {
+  width: 70vw;
+  margin-left: 15vw;
+  box-shadow: 50%;
+}
+
+.who-we-are-description {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px black;
+  font-weight: 1000;
+  font-size: 1.5vw;
+  line-height: 1.6;
+  text-align: center;
+  margin-left: 13%;
+  margin-right: 13%;
+  letter-spacing: 0.01em;
+  padding-top: 3vw;
+}
+
+.who-we-are-whatareyouwaitingfor {
+  color: #f3aa20;
+  font-weight: 1000;
+  font-size: 5vw;
+  line-height: 1.6;
+  text-align: center;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.01em;
+  margin-top: 1vw;
+}
+
+/* Join us now Button */
+#join-us-button {
+  background-color: #841e62;
+  color: white;
+  padding: 1% 25%;
+  font-weight: 1000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3vw;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: #e1ceff;
+  border: 0% solid #841e62;
+  border-radius: 20px;
+  margin-left: 16vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  align-items: center;
+}
+
+#join-us-button:hover {
+  background-color: #e1ceff;
+  color: rgb(112, 41, 99);
+}

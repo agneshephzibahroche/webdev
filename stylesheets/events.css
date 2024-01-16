@@ -1,0 +1,141 @@
+/* eventspage-section-1 */
+.eventspage-section-1 {
+  background-color: #58094f;
+  align-items: center;
+  justify-content: center;
+  height: 60vw;
+}
+
+.eventspage-section-1-title {
+  text-align: center;
+  padding-left: 4%;
+  display: inline;
+  width: 40vw;
+}
+
+.title {
+  font-weight: 1000;
+  font-size: 6vw;
+  color: #fbd8ff;
+  text-align: center;
+}
+
+.carousel-image {
+  width: 70vw;
+  height: 40vw;
+  border-radius: 10px;
+}
+
+.event-carousel {
+  width: 70vw;
+  height: 40vw;
+  align-items: center;
+  margin-left: 14vw;
+  margin-top: 1%;
+  border-radius: 10px;
+  padding-bottom: 20vw;
+}
+
+/* eventspage-section-2 */
+.eventspage-section-2 {
+  background-color: #841e62;
+  align-items: center;
+  justify-content: center;
+  height: 100vw;
+}
+
+.eventspage-section-2-image {
+  margin-top: 2vw;
+  margin-left: 8vw;
+  float: left;
+}
+
+#eventspage-section-2-image {
+  width: 30vw;
+  height: 30vw;
+}
+
+.smaller-title {
+  font-weight: 1000;
+  font-size: 4vw;
+  color: lavender;
+  text-align: center;
+  margin-right: 3vw;
+  margin-top: 3%;
+}
+
+.subtitle {
+  padding-top: 2%;
+  font-weight: 500;
+  font-size: 1.8vw;
+  color: lavender;
+  text-align: center;
+  margin-right: 8vw;
+  margin-left: 43vw;
+  letter-spacing: 0.05vw;
+  word-spacing: 0.2vw;
+}
+
+.genre-club {
+  margin-top: 3%;
+  height: 50vw;
+}
+
+.genre-club-img-1 {
+  width: 22vw;
+  height: 22vw;
+  margin-left: 12vw;
+  float: left;
+  margin-top: 5%;
+}
+
+.genre-club-title-1 {
+  margin-left: 38%;
+  color: rgb(235, 182, 193);
+  font-weight: 1000;
+  font-size: 1.6vw;
+  margin-right: 12vw;
+  line-height: 1.6;
+  padding-top: 5%;
+  text-align: right;
+}
+
+.genre-club-description-1 {
+  margin-left: 38%;
+  color: lavender;
+  font-weight: 500;
+  font-size: 1.4vw;
+  margin-right: 12vw;
+  line-height: 1.6;
+  padding-top: 1.2%;
+  text-align: right;
+}
+
+.genre-club-img-2 {
+  width: 22vw;
+  height: 22vw;
+  margin-right: 12vw;
+  float: right;
+  margin-top: 1.5%;
+}
+
+.genre-club-title-2 {
+  color: rgb(235, 182, 193);
+  font-weight: 1000;
+  font-size: 1.6vw;
+  margin-left: 12vw;
+  margin-right: 38%;
+  line-height: 1.6;
+  padding-top: 1.2%;
+}
+
+.genre-club-description-2 {
+  color: lavender;
+  font-weight: 500;
+  font-size: 1.4vw;
+  margin-left: 12vw;
+  margin-right: 38%;
+  margin-top: 0%;
+  line-height: 1.6;
+  padding-top: 1.5%;
+}

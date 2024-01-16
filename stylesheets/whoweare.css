@@ -1,0 +1,86 @@
+.whowearepage-section-1 {
+  background-color: #2a445e;
+  align-items: center;
+  justify-content: center;
+  height: 105vw;
+}
+
+.whowearepage-title {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top: 2%;
+}
+
+.whoweare-title-img {
+  width: 65vw;
+  height: 15vw;
+  border-radius: 15px;
+}
+
+.whoweare-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 1000;
+  font-size: 6.5vw;
+  color: #ffbd71;
+}
+
+.whoweare-welcome {
+  position: absolute;
+  font-weight: 600;
+  font-size: 5vw;
+  color: #ffbaba;
+  padding-left: 35%;
+  padding-top: 2%;
+}
+
+.whoweare-welcome-text {
+  position: absolute;
+  font-weight: 500;
+  font-size: 1.9vw;
+  color: #faabdf;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 20%;
+  text-align: center;
+}
+
+.who-we-are-whatareyouwaitingfor {
+  color: #f3aa20;
+  font-weight: 1000;
+  font-size: 5vw;
+  line-height: 1.6;
+  text-align: center;
+  margin-left: 8%;
+  margin-right: 8%;
+  letter-spacing: 0.01em;
+  margin-top: 65vw;
+}
+
+/* Join us now Button */
+#join-us-button {
+  background-color: #841e62;
+  padding: 1% 25%;
+  font-weight: 1000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3vw;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: #e1ceff;
+  border: 0% solid #841e62;
+  border-radius: 20px;
+  margin-left: 16vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  align-items: center;
+}
+
+#join-us-button:hover {
+  background-color: #e1ceff;
+  color: rgb(112, 41, 99);
+}

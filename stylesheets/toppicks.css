@@ -1,0 +1,290 @@
+/* toppicks-section-1 */
+.toppicks-section-1 {
+  background-color: #58094f;
+  align-items: center;
+  justify-content: center;
+  height: 45vw;
+}
+
+.toppicks-section-1-title {
+  float: right;
+  text-align: center;
+  padding-right: 5%;
+  display: inline;
+  margin-top: 6.5%;
+  width: 50vw;
+}
+
+.title {
+  font-weight: 1000;
+  font-size: 5vw;
+  color: #ffbd71;
+  text-align: center;
+}
+
+.subtitle {
+  padding-top: 2%;
+  font-weight: 1000;
+  font-size: 1.4vw;
+  color: #ffc27c;
+  text-align: center;
+  line-height: 1.7;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.toppicks-section-1-image {
+  margin-top: 5%;
+  margin-left: 10%;
+  float: left;
+}
+
+#toppicks-section-1-image {
+  width: 35vw;
+  height: 35vw;
+}
+
+/* toppicks-section-2 */
+
+.toppicks-section-2 {
+  background-color: #841e62;
+  align-items: center;
+  justify-content: center;
+  height: 130vw;
+}
+
+.top-picks-section {
+  align-items: center;
+  justify-content: center;
+  background-color: #2a445e;
+  height: 32vw;
+  width: 80vw;
+  margin-left: 9vw;
+  margin-right: 9vw;
+}
+
+.top-picks-card {
+  width: 17vw;
+  height: 25vw;
+  border-radius: 3%;
+  perspective: 500px;
+  margin-left: 8.8%;
+  padding-top: 4.2%;
+  float: left;
+}
+
+.top-picks-card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 3s;
+  transform-style: preserve-3d;
+}
+
+.top-picks-image {
+  width: 17vw;
+  height: 25vw;
+  border-radius: 3%;
+}
+
+.top-picks-card:hover .top-picks-card-content {
+  transform: rotateY(180deg);
+  transition: transform 1s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+#back-dd {
+  background-color: #022938;
+  border-radius: 3%;
+}
+
+#back-ffa {
+  background-color: #04052d;
+  border-radius: 3%;
+}
+
+#back-mah {
+  background-color: #0c041b;
+  border-radius: 3%;
+}
+
+.rating {
+  align-items: center;
+  font-size: 2vw;
+  padding-left: 5%;
+  padding-top: 60%;
+}
+
+.book-description-dd {
+  padding-left: 38%;
+  padding-right: 6%;
+  padding-top: 5%;
+  color: #dbd484;
+  font-size: 1.3vw;
+  font-weight: 500;
+  line-height: 2vw;
+  letter-spacing: 0.05rem;
+}
+
+.book-description-ffa {
+  padding-left: 38%;
+  padding-right: 6%;
+  padding-top: 6%;
+  color: #f58476;
+  font-size: 1.3vw;
+  font-weight: 500;
+  line-height: 2vw;
+  letter-spacing: 0.05rem;
+}
+
+.book-description-mah {
+  padding-left: 38%;
+  padding-right: 6%;
+  padding-top: 11%;
+  color: #fff;
+  font-size: 1.3vw;
+  font-weight: 500;
+  line-height: 2vw;
+  letter-spacing: 0.05rem;
+}
+
+/* toppicks-section-3 */
+
+.toppicks-section-3 {
+  background-color: #2a445e;
+  align-items: center;
+  justify-content: center;
+  height: 50vw;
+}
+
+.slider {
+  background: #2a445e;
+  height: 30vw;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 99%;
+}
+
+.slider::before,
+.slider::after {
+  /* background: linear-gradient(to right, #2A445E 0%, rgba(255, 255, 255, 0) 100%); */
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 50s linear infinite;
+  display: flex;
+  width: calc(30vw * 18);
+}
+
+.slider .slide-track:hover {
+  animation-play-state: paused;
+}
+
+.slider .slide {
+  height: 25vw;
+  width: 18vw;
+  margin-left: 0.5%;
+  border-radius: 3%;
+}
+
+.slide:nth-child(1),
+.slide:nth-child(10) {
+  background-image: url("/images/toppicks-images/daisy-darker.jpg");
+  background-repeat: no-repeat;
+  background-size: 18vw 25vw;
+}
+
+.slide:nth-child(2),
+.slide:nth-child(11) {
+  background-image: url("/images/toppicks-images/five-feet-apart.jpg");
+  background-repeat: no-repeat;
+  background-size: 18vw 25vw;
+}
+
+.slide:nth-child(3),
+.slide:nth-child(12) {
+  background-image: url("/images/toppicks-images/milk-and-honey.jpg");
+  background-repeat: no-repeat;
+  background-size: 18vw 25vw;
+}
+
+.slide:nth-child(4),
+.slide:nth-child(13) {
+  background-image: url("/images/toppicks-images/local-woman-missing.jpg");
+  background-repeat: no-repeat;
+  background-size: 18vw 25vw;
+}
+
+.slide:nth-child(5),
+.slide:nth-child(14) {
+  background-image: url("/images/toppicks-images/percy-jackson.jpg");
+  background-repeat: no-repeat;
+  background-size: 18vw 25vw;
+}
+
+.slide:nth-child(6),
+.slide:nth-child(15) {
+  background-image: url("/images/toppicks-images/before-the-coffee-gets-cold.jpg");
+  background-repeat: no-repeat;
+  background-size: 18vw 25vw;
+}
+
+.slide:nth-child(7),
+.slide:nth-child(16) {
+  background-image: url("/images/toppicks-images/pride-and-prejudice.jpg");
+  background-repeat: no-repeat;
+  background-size: 18vw 25vw;
+}
+
+.slide:nth-child(8),
+.slide:nth-child(17) {
+  background-image: url("/images/toppicks-images/and-then-there-were-none.jpg");
+  background-repeat: no-repeat;
+  background-size: 18vw 25vw;
+}
+
+.slide:nth-child(9),
+.slide:nth-child(18) {
+  background-image: url("/images/toppicks-images/the-mountain-is-you.jpg");
+  background-repeat: no-repeat;
+  background-size: 18vw 25vw;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}

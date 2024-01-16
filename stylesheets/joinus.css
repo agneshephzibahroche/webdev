@@ -1,0 +1,115 @@
+/* joinus-section-1 */
+
+.joinus-section-1 {
+  background-color: #58094f;
+  align-items: center;
+  justify-content: center;
+  height: 95vw;
+}
+
+.joinuspage-title {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top: 2%;
+}
+
+.joinus-title-img {
+  width: 65vw;
+  height: 15vw;
+  border-radius: 15px;
+}
+
+.joinus-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 1000;
+  font-size: 8vw;
+  color: #ffbd71;
+}
+
+.joinus-form {
+  margin-left: 2vw;
+  margin-top: 4vw;
+  border-radius: 15px;
+  padding: 3vw;
+  padding-bottom: 5vw;
+  color: #58094f;
+  width: 95vw;
+  height: 73vw;
+  font-size: 1.9vw;
+  font-weight: 900;
+  align-items: center;
+  background-color: #fcc45e;
+}
+
+.joinus-form-field {
+  font-size: 1.5vw;
+  font-weight: 900;
+}
+
+/* Join Us Button */
+#submit-button {
+  background-color: #2a445e;
+  border: none;
+  padding-inline: 1vw;
+  padding-bottom: 0.5vw;
+  font-weight: 1000;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.9vw;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: #f3c97a;
+  border: 2px solid #2a445e;
+  border-radius: 20px;
+  width: 15vw;
+}
+
+#submit-button:hover {
+  background-color: #f3c97a;
+  color: #2a445e;
+}
+
+/* joinus-section-2 */
+
+.joinus-section-2 {
+  background-color: #2a445e;
+  align-items: center;
+  justify-content: center;
+  height: 85vw;
+}
+
+.title {
+  font-weight: 1000;
+  font-size: 6vw;
+  color: #ffbd71;
+  /* text-shadow: 1px 1px darkgrey; */
+  text-align: center;
+  margin-bottom: 2%;
+  padding-top: 2%;
+}
+
+.faqs {
+  padding: 1.3vw;
+}
+
+.accordion-button {
+  background-color: #58094f;
+  color: #f3c97a;
+  font-size: 1.5vw;
+  font-weight: 900;
+  letter-spacing: 5%;
+  padding: 0.5vw;
+}
+
+.accordion-item {
+  background-color: #58094f;
+  color: #f3c97a;
+  font-size: 1.3vw;
+  font-weight: 900;
+  letter-spacing: 5%;
+}

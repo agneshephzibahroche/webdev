@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css" />
+
+    <!-- JQuery to support Bootstrap Functions -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Javascript -->
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <!-- CSS scroll animation -->
+    <!-- https://michalsnik.github.io/aos/ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- StyleSheet for index page -->
+    <link rel="stylesheet" href="stylesheets/index.css" />
+
+    <!-- General Stylesheet -->
+    <link rel="stylesheet" href="stylesheets/general.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <!-- https://getbootstrap.com/docs/5.3/components/navbar/ -->
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light"
+      id="navigation"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          id="navigation-title"
+          style="font-size: 2vw"
+          >📖 Chapters & Pages</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html"
+                id="navigation-tab"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="whoweare.html"
+                id="navigation-tab"
+                >Who We Are</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="toppicks.html"
+                role="button"
+                aria-expanded="false"
+                id="navigation-tab"
+              >
+                Top Picks
+              </a>
+              <ul class="dropdown-menu" id="navigation-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="toppicks.html#ourlatestpick"
+                    id="navigation-dropdown"
+                    >Our Latest Pick</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="toppicks.html#top3picks"
+                    id="navigation-dropdown"
+                    >Top 3 Picks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="toppicks.html#pastreads"
+                    id="navigation-dropdown"
+                    >Past Reads</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="genreclubs.html"
+                id="navigation-tab"
+                >Genre Clubs</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="events.html"
+                role="button"
+                aria-expanded="false"
+                id="navigation-tab"
+              >
+                Events
+              </a>
+              <ul class="dropdown-menu" id="navigation-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="events.html#pastevents"
+                    id="navigation-dropdown"
+                    >Our Past Events</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="events.html#upcomingevents"
+                    id="navigation-dropdown"
+                    >Upcoming Events</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <a href="joinus.html"><button id="joinus-button">Join Us!</button></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- back to top button -->
+    <!-- https://mdbootstrap.com/docs/standard/extended/back-to-top/ -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg"
+      style="color: #f3aa20; background-color: #3b5998;"
+      id="btn-back-to-top"
+    >
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- Section 1 -->
+    <div class="homepage-section-1">
+      <div class="homepage-section-1-title" data-aos="fade-up">
+        <h1 class="title">Chapters</h1>
+        <h1 class="title">& Pages</h1>
+        <h3 class="subtitle">Where we have fun reading...</h3>
+      </div>
+
+      <div class="homepage-section-1-image" data-aos="fade-up">
+        <img
+          src="images/home-images/indexpage-1.jpg"
+          class="rounded"
+          alt="picture of girl reading"
+          id="homepage-section-1-image"
+        />
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="homepage-section-2">
+      <h2 class="title" style="padding: 3%" data-aos="fade-up">Top Picks</h2>
+      <div
+        class="top-picks-section rounded"
+        data-aos="zoom-in"
+        data-aos-duration="500"
+      >
+        <div>
+          <a href="toppicks.html#toppicks"
+            ><img
+              class="card-img top-picks-image"
+              src="images/home-images/daisy-darker.jpg"
+              alt="Daisy Darker book cover"
+              data-aos="fade-up-right"
+              data-aos-duration="1500"
+          /></a>
+          <a href="toppicks.html#toppicks"
+            ><img
+              class="card-img top-picks-image"
+              src="images/home-images/five-feet-apart.jpg"
+              alt="Five Feet Apart book cover"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+          /></a>
+          <a href="toppicks.html#toppicks"
+            ><img
+              class="card-img top-picks-image"
+              src="images/home-images/milk-and-honey.jpg"
+              alt="Milk and Honey book cover"
+              data-aos="fade-up-left"
+              data-aos-duration="1500"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="homepage-section-3">
+      <h2 class="title" style="padding: 3%" data-aos="fade-up">Genre Clubs</h2>
+      <div class="genre-club" data-aos="fade-up" data-aos-duration="1000">
+        <a href="genreclubs.html#thriller"
+          ><img
+            src="images/home-images/thriller.png"
+            class="genre-club-img-1 rounded" 
+            alt="thriller thumbnail image"
+        /></a>
+        <h6 class="genre-club-description-1">
+          Thriller novels are a heart-pumping adventure into the unknown. Read
+          books that are filled with unexpected twists, edge-of-your-seat
+          suspense, and a race against time to uncover the truth. Discuss anout
+          your favourite books with similar thrill seekers (even if it is just
+          in books) and get ready for a journey filled with intrigue, danger,
+          and nail-biting moments that will keep you guessing until the very
+          end.
+        </h6>
+      </div>
+      <div class="genre-club" data-aos="fade-up" data-aos-duration="1000">
+        <a href="genreclubs.html#thriller"
+          ><img
+            src="images/home-images/fantasy.png"
+            class="genre-club-img-2 rounded"
+            alt="fantasy thumbnail image"
+        /></a>
+        <h6 class="genre-club-description-2">
+          Fantasy books transport you to a magical world filled with mythical
+          creatures, enchanted landscapes, and daring heroes on a quest for
+          adventure. Immerse yourself in a world of imagination, where the
+          impossible becomes reality and the boundaries of your wildest dreams
+          are limitless. Hitch a ride with the fantasy adventurers who read
+          books that will spark your creativity and leave you spellbound.
+        </h6>
+      </div>
+      <a href="genreclubs.html"
+        ><button id="explore-more-button">Explore More Now !</button></a
+      >
+    </div>
+
+    <!-- Section 4 -->
+    <div class="homepage-section-4">
+      <h2 class="title" style="padding: 3%" data-aos="fade-up">Who We Are</h2>
+      <a href="whoweare.html"
+        ><img
+          src="images/home-images/who-we-are.png"
+          class="rounded who-we-are"
+          data-aos="flip-up"
+          data-aos-duration="1500"
+          alt="chapters & pages thumbnail image"
+      /></a>
+      <div
+        class="who-we-are-description"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        Join a community where books come to life and ideas soar! Chapters &
+        Pages is where passionate readers come together to explore new worlds
+        and delve deeper into thought-provoking stories. Are you looking for
+        lively discussions, meaningful connections, and an unending love for the
+        world surrounding books?
+      </div>
+      <div
+        class="who-we-are-whatareyouwaitingfor"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        So...what are you waiting for ?
+      </div>
+      <a href="joinus.html"
+        ><button id="join-us-button">Join Us Now !</button></a
+      >
+    </div>
+
+    <!-- Footer -->
+    <!-- https://mdbootstrap.com/docs/standard/navigation/footer/ -->
+    <footer class="text-center" id="footer">
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #3b5998"
+            href="#!"
+            role="button"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #55acee"
+            href="#!"
+            role="button"
+            ><i class="fa fa-twitter" aria-hidden="true"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="#!"
+            role="button"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+        </section>
+
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <div class="row d-flex justify-content-center">
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter : </strong>
+                </p>
+              </div>
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id="form5Example2"
+                    placeholder="Email Adress"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button
+                  type="submit"
+                  id="subscribe-button"
+                  class="btn btn-outline-light mb-4"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: #2a445e; font-weight: 1000; color: #f3aa20"
+      >
+        © 2023 Copyright: Chapters and Pages
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- For smooth scrolling -->
+    <!-- http://michalsnik.github.io/aos/ -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- For back to top button -->
+    <script>
+      //Get the button
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
